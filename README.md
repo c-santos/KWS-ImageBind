@@ -62,6 +62,8 @@ When the notebook is ran, the files will look like the following:
 
 Seen from the table, the large gap with SOTA models is noticeable. However, it is important to note that these models were trained on the Speech Commands dataset, unlike with ImageBind which is performing zero-shot KWS and learns from the joint embedding space (almost self-supervised).
 
+*A more conclusive accuracy calculation can be obtained. Due to limited resources, accuracy was calculated only with `n_datapoints=64`
+
 
 Notes from ImageBind Paper:
 - Foundation of ImageBind is a vision transformer.

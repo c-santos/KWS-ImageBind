@@ -30,14 +30,14 @@ References:
 
 This repo serves as a helper repo for the main notebook: `KWS-ImageBind.ipynb`.
 
-To run the code, download **ONLY** the `KWS-ImageBind.ipynb`. The notebook will download this repository for the necessary files to run the program. Keep the `KWS-ImageBind` notebook and the repo in the same folder.
+To run the code, download the `KWS-ImageBind.ipynb` file **ONLY** and import the file to Google Colab. The notebook will download this repository to get the necessary files to run the program.
 
 When the notebook is ran, the files will look like the following:
 
 
     folder/
     ├── KWS-ImageBind.ipynb             Main notebook
-    ├── data                            Speech Commands dataset folder
+    ├── data/                           Speech Commands dataset folder
     └── KWS-ImageBind/
         ├── .assets/
         ├── .checkpoints/
@@ -62,7 +62,7 @@ When the notebook is ran, the files will look like the following:
 
 Seen from the table, the large gap with SOTA models is noticeable. However, it is important to note that these models were trained on the Speech Commands dataset, unlike with ImageBind which is performing zero-shot KWS and learns from the joint embedding space (almost self-supervised).
 
-*A more conclusive accuracy calculation can be obtained. Due to limited resources, accuracy was calculated only with `n_datapoints=64`*
+*A more conclusive accuracy calculation can be obtained by increasing the number of datapoints tested. Due to limited resources, accuracy was calculated only with `n_datapoints=64`*
 
 
 Notes from ImageBind Paper:
